@@ -11,6 +11,7 @@ import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import java.math.BigDecimal;
+import java.util.Objects;
 
 @Entity
 @Getter
@@ -33,4 +34,17 @@ public class Purchase extends BaseEntity {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "categoryid", referencedColumnName = "id")
     private Category category;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Purchase purchase = (Purchase) o;
+        return quantity == purchase.quantity && Objects.equals(name, purchase.name) && Objects.equals(description, purchase.description) && Objects.equals(price, purchase.price) && Objects.equals(total, purchase.total) && Objects.equals(category, purchase.category);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, description, price, quantity, total, category);
+    }
 }
