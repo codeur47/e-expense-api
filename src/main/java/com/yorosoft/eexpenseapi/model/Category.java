@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 import java.util.Collection;
+import java.util.Objects;
 
 @Entity
 @Getter
@@ -20,4 +21,17 @@ public class Category extends BaseEntity {
 
     @OneToMany(fetch = FetchType.LAZY)
     private Collection<Purchase> purchaseList;
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Category category = (Category) o;
+        return Objects.equals(name, category.name) && Objects.equals(purchaseList, category.purchaseList);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, purchaseList);
+    }
 }
