@@ -12,7 +12,7 @@ An application expose 5 REST endpoints for each entity. For example *Category* (
 * **GET** `{baseURL}/category/` - lists all *Categories* (as Json array),
 * **GET** `{baseURL}/category/{id}` - gets single *Category* (as Json) by its `{id}`,
 * **POST** `{baseURL}/category/` - creates a new *Category* which is passed in the BODY of the request,
-* **PUT** `{baseURL}/category/{id}` - updates an existing *Category* (with an `{id}`) with `Notice` passed in the body of the request,
+* **PUT** `{baseURL}/category/{id}` - updates an existing *Category* (with an `{id}`) with `Category` passed in the body of the request,
 * **DELETE** `{baseURL}/category/{id}`- deletes an existing *Category* by its `{id}`.
 
 
