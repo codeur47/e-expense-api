@@ -1,6 +1,5 @@
 package com.yorosoft.eexpenseapi.dto;
 
-import com.yorosoft.eexpenseapi.model.Purchase;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -21,5 +20,5 @@ public class CategoryDTO extends BaseDTO {
     private String name;
 
     @ApiModelProperty(value = "The list of the category purchases")
-    private Collection<Purchase> purchaseList;
+    private Collection<PurchaseDTO> purchaseDTOS;
 }
