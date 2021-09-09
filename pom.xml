@@ -18,12 +18,12 @@
 		<org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
 		<org.projectlombok.version>1.18.10</org.projectlombok.version>
 		<code.coverage.exclusions>
-			com/yorosoft/eexpenseapi/dto/**,
-			com/yorosoft/eexpenseapi/model/**,
-			com/yorosoft/eexpenseapi/mapper/**,
-			com/yorosoft/eexpenseapi/advice/**,
-			com/yorosoft/eexpenseapi/controller/CrudController.java,
-			com/yorosoft/eexpenseapi/EExpenseApiApplication.java
+			**/com/yorosoft/eexpenseapi/dto/**,
+			**/com/yorosoft/eexpenseapi/model/**,
+			**/com/yorosoft/eexpenseapi/mapper/**,
+			**/com/yorosoft/eexpenseapi/advice/**,
+			**/com/yorosoft/eexpenseapi/controller/CrudController.java,
+			**/com/yorosoft/eexpenseapi/EExpenseApiApplication.java
 		</code.coverage.exclusions>
 	</properties>
 	<dependencies>
