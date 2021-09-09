@@ -6,9 +6,9 @@ import com.yorosoft.eexpenseapi.repository.PurchaseRepository;
 import com.yorosoft.eexpenseapi.service.PurchaseService;
 import org.junit.jupiter.api.Test;
 
-public class PurchaseControllerTest {
+class PurchaseControllerTest {
     @Test
-    public void testConstructor() {
+    void testConstructor() {
         // TODO: This test is incomplete.
         //   Reason: Missing observers.
         //   Diffblue Cover was unable to create an assertion.

@@ -6,9 +6,9 @@ import com.yorosoft.eexpenseapi.repository.CategoryRepository;
 import com.yorosoft.eexpenseapi.service.CategoryService;
 import org.junit.jupiter.api.Test;
 
-public class CategoryControllerTest {
+class CategoryControllerTest {
     @Test
-    public void testConstructor() {
+    void testConstructor() {
         // TODO: This test is incomplete.
         //   Reason: Missing observers.
         //   Diffblue Cover was unable to create an assertion.
