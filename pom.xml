@@ -17,6 +17,11 @@
 		<java.version>11</java.version>
 		<org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
 		<org.projectlombok.version>1.18.10</org.projectlombok.version>
+		<code.coverage.exclusions>
+			**/com/yorosoft/e-expense-api/dto/**,
+			**/com/yorosoft/e-expense-api/model/**,
+			**/com/yorosoft/e-expense-api/EExpenseApiApplication.java
+		</code.coverage.exclusions>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -171,6 +176,7 @@
 			<properties>
 				<sonar.sources>.</sonar.sources>
 				<sonar.inclusions>src/main/java/**,src/main/resources/**</sonar.inclusions>
+				<sonar.exclusions>${code.coverage.exclusions}</sonar.exclusions>
 				<sonar.projectKey>codeur47_e-expense-api</sonar.projectKey>
 				<sonar.organization>codeur47</sonar.organization>
 				<sonar.host.url>https://sonarcloud.io</sonar.host.url>
