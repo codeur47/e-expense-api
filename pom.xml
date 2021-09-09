@@ -20,6 +20,9 @@
 		<code.coverage.exclusions>
 			**/com/yorosoft/e-expense-api/dto/**,
 			**/com/yorosoft/e-expense-api/model/**,
+			**/com/yorosoft/e-expense-api/mapper/**,
+			**/com/yorosoft/e-expense-api/advice/**,
+			**/com/yorosoft/e-expense-api/controller/CrudController.java,
 			**/com/yorosoft/e-expense-api/EExpenseApiApplication.java
 		</code.coverage.exclusions>
 	</properties>
