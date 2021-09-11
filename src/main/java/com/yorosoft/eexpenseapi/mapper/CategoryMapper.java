@@ -1,6 +1,8 @@
 package com.yorosoft.eexpenseapi.mapper;
 
 import com.yorosoft.eexpenseapi.dto.CategoryDTO;
+import com.yorosoft.eexpenseapi.dto.CategoryRequestDTO;
+import com.yorosoft.eexpenseapi.dto.CategoryResponseDTO;
 import com.yorosoft.eexpenseapi.model.Category;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
@@ -17,4 +19,9 @@ public interface CategoryMapper {
 
     List<Category> dtosToCategories(List<CategoryDTO> categoryDTOS);
     List<CategoryDTO> categoriesToDtos(List<Category> categories);
+
+    CategoryRequestDTO categoryToRequestDto(Category category);
+    Category requestDtoToCategory(CategoryRequestDTO categoryRequestDTO);
+
+    List<CategoryResponseDTO> categoriesToResponseDtos(List<Category> categories);
 }
