@@ -10,7 +10,6 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @AllArgsConstructor
 public abstract class BaseDTO {
-
     @ApiModelProperty(value = "The id of the object")
     private Long id;
 }
