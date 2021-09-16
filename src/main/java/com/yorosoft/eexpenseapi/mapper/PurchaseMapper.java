@@ -1,6 +1,7 @@
 package com.yorosoft.eexpenseapi.mapper;
 
 import com.yorosoft.eexpenseapi.dto.PurchaseDTO;
+import com.yorosoft.eexpenseapi.dto.PurchaseResponseDTO;
 import com.yorosoft.eexpenseapi.model.Purchase;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
@@ -17,4 +18,7 @@ public interface PurchaseMapper {
 
     List<Purchase> dtosToPurchases(List<PurchaseDTO> purchaseDTOS);
     List<PurchaseDTO> purchasesToDtos(List<Purchase> purchases);
+
+    PurchaseResponseDTO purchaseToResponseDto(Purchase purchase);
+    List<PurchaseResponseDTO> purchasesToResponseDtos(List<Purchase> purchases);
 }
